@@ -12,4 +12,3 @@ console.log(`O resultado da multiplicação entre ${n1} e ${n2} é igual a: ${mu
 console.log(`O resultado da divisão entre ${n1} e ${n2} é igual a: ${divisao}`);
 
 
-
