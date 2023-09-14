@@ -31,9 +31,14 @@ const editar_produtos = (id, qtdAtual) => {
 
 }
 
+const remover_produto = (id) =>{
+    produtos = produtos.filter(p => p.id !== id);
+}
+
 module.exports = {
     criar_produto,
     adicionar_produto,
     listar_produtos,
-    editar_produtos
+    editar_produtos,
+    remover_produto
 }
