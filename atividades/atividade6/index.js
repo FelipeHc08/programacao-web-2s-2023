@@ -9,16 +9,16 @@ app.set('views', __dirname + '/views');
 app.use(express.urlencoded({ extended: false }));
 
 app.get('/', (req, res) => {
-    res.render('form');
+    res.render('index');
 });
 
-app.post('/submit', (req, res) => {
+app.post('/dados', (req, res) => {
     const nome = req.body.nome;
     const email = req.body.email;
     const telefone = req.body.telefone;
 
     // Renderiza a página "submit.html" com os dados
-    res.render('submit', { nome, email, telefone });
+    res.render('dados', { nome, email, telefone });
 });
 
 const PORT = 8080;
